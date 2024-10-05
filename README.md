@@ -3,3 +3,4 @@
 -npm install sweetalert --save
 # chạy chương trình
 node app.js
+# Sửa file .env
