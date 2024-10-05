@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ /* General Styling */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.header-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: left;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+    font-size: 16px;
+}
+
+.navbar-nav > li > a:hover {
+    color: #f0ad4e !important;
+}
+
+/* Button */
+.head-btn {
+    width: 150px;
+    height: 45px;
+    background-color: #f0ad4e;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.head-btn:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Tạo hiệu ứng đổ bóng và viền gradient */
+.circle-outer, .circle-middle, .circle-inner {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-outer {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+    border: 3px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.circle-middle {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+    border: 3px solid #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circle-inner {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+    border: 3px solid #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.circle-item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.circle-item:hover {
+    transform: scale(1.1);
+    background-color: #ffca28;
+}
+
+/* Điều chỉnh vị trí của các mục con */
+.circle-outer .circle-item {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.circle-middle .circle-item {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.circle-inner .circle-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Text Styling */
+.header-left p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-left h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.header-left p {
+    font-size: 18px;
+}
+.container{
+    width: 100%;          /* Full width */
+    max-width: 1200px;    /* Maximum width for larger screens */
+    margin: 0 auto;       /* Center the container */
+    padding: 0 15px;      /* Add padding to the left and right */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+}
+/* RESPONSIVE */
+
+  @media only screen and (max-width:1025px){
+    #ds-head{
+      display:none;
+    }
+    .header-content{
+        align-items: flex-start;
+        margin-top: 20%;
+    }
+    .circle-outer {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .circle-middle {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .circle-inner {
+        width: 210px;
+        height: 210px;
+    }
+    
+    .circle-item {
+        width: 70px;
+        height: 70px;
+    }
+  }
+  @media only screen and (max-width:769px){
+    #ds-head{
+      display:none;
+    }
+    form.navbar-form{
+        display:none;
+    }
+    .header-content{
+        position: absolute;
+        top: 20%;
+        left:17%;
+        width: 100%;
+        height: 80%;
+        display:block;
+        margin:auto auto;
+    }
+    .header-left h2{
+        font-size: 23px;
+    }
+    .header-right{
+        margin-top:80px;
+    }
+    .circle-outer {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .circle-middle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .circle-inner {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .circle-item {
+        width: 50px;
+        height: 50px;
+    }
+  }
