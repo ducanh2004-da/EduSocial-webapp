@@ -1,0 +1,29 @@
+#sidebar a {
+    border: 0px;
+}
+
+.sidebar-color, .sidebar-color a {
+    background-color: #343434;
+}
+.sidebar-color-button-section {
+    background-color: #353839;
+}
+.header-background {
+    background-image: url('https://th.bing.com/th/id/R.84920d86b6bbd4d2f780d26f4bf830e4?rik=gNTh1lTFfKIC%2bw&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1555066931-4365d14bab8c%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8Y29kaW5nfHwwfHx8fDE2MjkzNjU5NTc%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=X5pB53YnamfuOcZGaSwkYzq9TJDV8vKmQrMirCpyvb0%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+}
+.left-side div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side .text-center span {
+    margin-top: 4px; /* Space above the span */
+}
+.card:hover {
+    box-shadow: -2px 2px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 2px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 17px 0px rgba(0,0,0,0.75);
+}

@@ -1,0 +1,94 @@
+<% layout('./layouts/sidebar') -%>
+
+    <div class="container mt-4">
+        <div class="breadcrumb mb-3 d-flex align-items-center">
+            <i class="fa-solid fa-house me-2"></i> =>
+            <p class="mb-0">Bài Viết</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-7 main-left">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 rounded mb-4">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><button class="btn active me-2">Bài Viết</button></li>
+                        <li class="nav-item"><button class="btn me-2">Series</button></li>
+                        <li class="nav-item"><button class="btn">Bài viết của tôi</button></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 me-2">Sắp Xếp:</p>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Mới nhất
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li class="active"><a href="#">Mới Nhất</a></li>
+                              <li><a href="#">Hoạt động</a></li>
+                              <li><a href="#">Lượt xem</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </nav>
+                
+                <div class="add bg-white p-1 rounded mb-1 d-flex">
+                    <div class="user-add me-5"><img src="/user.png" class="img-fluid rounded-circle"></div>
+                    <div class="addbtn w-100">
+                        <h3 class="mb-3">Do Duc Anh</h3>
+                        <textarea class="form-control" rows="3" placeholder="Chia sẻ bài viết, tài liệu"></textarea>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    <div class="content-item bg-white p-4 rounded mb-5 d-flex">
+                        <div class="user-content me-3"><img src="/user.png" class="img-fluid rounded-circle"></div>
+                        <div class="nd">
+                            <h3>Vo Tan Duc</h3>
+                            <h2>Line Number</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <div class="content-icon d-flex">
+                                <i class="fa-solid fa-thumbs-up me-3"></i>
+                                <i class="fa-solid fa-thumbs-down me-3"></i>
+                                <i class="fa-solid fa-comment me-3"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 main-right">
+                <div class="common-tag bg-light p-3 rounded mb-4">
+                    <h2 class="text-danger">Tag Phổ biến</h2>
+                    <div class="tag-item d-flex justify-content-between align-items-center mb-2">
+                        <p class="mb-0">C#</p>
+                        <p class="mb-0">x138</p>
+                    </div>
+                    <div class="morebtn text-end">
+                        <a href="#">Xem thêm...</a>
+                    </div>
+                </div>
+                
+                <div class="question bg-light p-3 rounded">
+                    <h2 class="text-danger">Câu hỏi mới nhất</h2>
+                    <hr>
+                    <div class="question-item">
+                        <h2 class="question-head">Crawling và Scraping data bằng Selenium</h2>
+                        <div class="icon d-flex">
+                            <i class="fa-solid fa-thumbs-up me-3"></i>
+                            <i class="fa-solid fa-thumbs-down me-3"></i>
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagin d-flex justify-content-center mt-4">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+    </div>

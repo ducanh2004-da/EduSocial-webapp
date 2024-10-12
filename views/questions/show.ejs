@@ -1,0 +1,67 @@
+<% layout('layouts/indexboilerplate') -%>
+<div class="container my-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <!-- Question Title -->
+            <h2 class="card-title"><%= question.title %></h1>
+            <div class="d-flex justify-content-between text-muted">
+                <p class="mb-0">Posted <strong>by Tuấn Vũ</strong> </p>
+                <p class="mb-0">Date Posted: <strong><%= new Date(question.createdAt).toLocaleDateString() %></strong></p>
+                
+
+            </div>
+            <p class="mb-0">Views <strong><%= question.views  %></strong></p>
+            <!-- Tags -->
+            <div class="my-3">
+                <h6>Tags:</h6>
+                <% question.tags.forEach(tag => { %>
+                    <span class="badge bg-info me-1"><%= tag %></span>
+                <% }); %>
+            </div>
+
+            <!-- Question Body -->
+            <div class="mt-4">
+                <p class="lead"><%= question.body %></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-3">
+        <div class="d-flex justify-content-between">
+            <!-- Edit button aligned to the left -->
+            <a class="card-link btn btn-info me-2" href="/user/questions/<%=question._id%>/edit">Edit</a>
+            
+            <!-- Delete form aligned to the right -->
+            <form action="/user/questions/<%=question._id%>?_method=DELETE" method="POST" class="me-4">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Answers Section
+    <div class="mt-5">
+        <h3>Answers <%= %></h3>
+        <% question.comments.forEach(comment => { %>
+            <div class="card my-3">
+                <div class="card-body">
+                    <p><strong><%= answer.author %>:</strong></p>
+                    <p><%= answer.body %></p>
+                    <small class="text-muted">Answered on <%= new Date(answer.createdAt).toLocaleDateString() %></small>
+                </div>
+            </div>
+        <% }); %>
+    </div> -->
+
+    <!-- Answer Form -->
+    <div class="mt-4">
+        <h4>Post Your Answer</h4>
+        <form action="/user/questions/<%= question._id %>/answers" method="POST">
+            <div class="mb-3">
+                <label for="answer" class="form-label">Your Answer</label>
+                <textarea id="answer" name="answer[body]" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <a href="/user/questions" class="btn btn-primary m-2">Back to questions page</a>
+</div>

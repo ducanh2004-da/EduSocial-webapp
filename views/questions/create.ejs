@@ -1,0 +1,19 @@
+<% layout('layouts/indexboilerplate') -%>
+<div class="container mt-2" style="width: 80%;">
+    <h2>Submit Your Question</h2>
+    <form id="questionForm" action="/user/questions" method="post" ">
+        <div class="mb-3">
+            <label for="title" class="form-label">Question Title</label>
+            <input type="text" class="form-control" id="title" name="question[title]" required>
+        </div>
+        <div class="mb-3">
+            <label for="body" class="form-label">Question Body</label>
+            <textarea class="form-control" id="body" name="question[body]" rows="5" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="tags" class="form-label">Tags (seperated by space)</label>
+            <input type="text" class="form-control" id="tags" name="question[tags]">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Question</button>
+    </form>
+</div>

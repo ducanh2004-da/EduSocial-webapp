@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/91f5be4707.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Trang chính</title>
+</head>
+<body>
+    <header style="background-image: url(/background.jpg); background-size: cover; background-repeat: no-repeat;image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><i class="fa-solid fa-earth-europe"></i> EduSocial</a>
+                </div>
+                <ul id="ds-head" class="nav navbar-nav">
+                    <li class="active"><a href="#">Giới thiệu</a></li>
+                    <li><a href="user/courses">Khóa học</a></li>
+                    <li><a href="#">Người sáng lập</a></li>
+                    <li><a href="/user/questions">Hỏi đáp</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span> Tài khoản 
+                            <span class="caret"></span>
+                        </a>
+                        <ul style="border-radius: 10px;" class="dropdown-menu">
+                            <li><a href="/api/"><i class="fa-solid fa-users-gear"></i>   Đăng nhập</a></li>
+                            <li><a href="/api/"><i class="fa-solid fa-user-plus"></i>   Đăng kí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="header-left">
+                <p><strong>MẠNG XÃ HỘI GIÁO DỤC</strong></p>
+                <h2>Thư Viện Học Tập Hiệu Quả</h2>
+                <p>Lập trình?Kỹ Năng?Ngôn Ngữ?<br>Tất cả đều có ở đây</p>
+                <button class="head-btn"><a href="/user/courses">Học ngay</a></button>
+            </div>
+            <div class="header-right">
+                <div class="circle-outer">
+                    <div style="transform: translate(-50%, -10%);" class="circle-item"><a href="/user/questions">Hỏi Đáp</a></div>
+                    <div style="transform: translate(400%, 150%);" class="circle-item">Phản Hồi</div>
+                    <div class="circle-middle">
+                        <div style="transform: translate(30%, -160%);" class="circle-item"><a href="/user/post">Bài Viết</a></div>
+                        <div style="transform: translate(-160%, 30%);" class="circle-item">Tài trợ</div>
+                        <div class="circle-inner">
+                            <div class="circle-item"><a href="/user/courses">Học ngay</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

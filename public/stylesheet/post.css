@@ -1,0 +1,91 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* HEADER */
+ header{
+    display:flex !important;
+    height:30vh;
+    justify-content: space-between;
+    padding:20px 50px;
+    color:aliceblue;
+}
+.addNewbtn{
+    width:120px;
+    height:50px;
+    margin-top: 70%;
+    background-color: rgb(106, 106, 241);
+    border-radius: 10px;
+    transition:all 1.5s;
+}
+.addNewbtn:hover{
+    background-color: blue;
+}
+
+/* MAIN */
+.main-left {
+    margin-right: 20px;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.nav-item .btn {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+.nav-item .btn:hover{
+    background-color: black;
+    color:white;
+}
+.nav-item .btn.active {
+    background-color: #3b82f6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.add {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.addbtn textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.content-item {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content-icon i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content-icon i:hover {
+    color: #3b82f6;
+}
+
+/* SIDEBAR */
+.common-tag, .question {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagin .pagination li.active a {
+    background-color: #3b82f6;
+    color: white;
+}

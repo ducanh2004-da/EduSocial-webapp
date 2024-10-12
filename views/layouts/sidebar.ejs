@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Post</title>
+    <link rel="stylesheet" href="/stylesheet/post.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91f5be4707.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/stylesheet/indextemplate.css"> 
+</head>
+  <body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto px-0 sidebar-color sticky-top vh-100">
+                <div id="sidebar" class="collapse collapse-horizontal show border-end ">
+                    <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start">
+                        <div class="text-center ">
+                            <h2 class="text-white">EduSocial</h2>
+                        </div>
+                        <div class="card mb-3" style="border-radius: 0px; border: 0px">
+                            <div class="card-body sidebar-color-button-section">
+                                <button type="button" class="btn btn-sm btn-danger col-12 my-2 text-white">Đăng Kí</button>
+                                <button type="button" class="btn btn-sm btn-secondary col-12 my-2 text-white">Đăng Nhập</button>
+                            </div>
+                          </div>
+                          <div class="list-group border-0 rounded-0 text-sm-start ">
+                            <div class="dropend">
+                                <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-book-fill me-2"></i>
+                                    <span class="text-white flex-grow-1">Khóa Học</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                                <!-- Dropdown menu that appears on the right side -->
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item text-white" href="#">Sub Item 1</a></li>
+                                    <li><a class="dropdown-item text-white" href="#">Sub Item 2</a></li>
+                                    <li><a class="dropdown-item text-white" href="#">Sub Item 3</a></li>
+                                </ul>
+                            </div>
+                            <a href="/user/questions" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-book-fill me-2"></i>
+                                <span class="text-white flex-grow-1">Hỏi Đáp</span>
+                            </a>
+                            <a href="/user/post" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-file-earmark-post me-2"></i>
+                                <span class="text-white flex-grow-1">Bài Viết</span>
+                            </a>
+                            <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-bookmark-fill me-2"></i>
+                                <span class="text-white flex-grow-1">Tag</span>
+                            </a>
+                            <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-people-fill me-2"></i>
+                                <span class="text-white flex-grow-1">Member</span>
+                            </a>
+                            <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-exclamation-circle-fill me-2"></i>
+                                <span class="text-white flex-grow-1">Về eduSocial</span>
+                            </a>
+                            <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-cup-hot-fill me-2"></i>
+                                <span class="text-white flex-grow-1">Tài trợ</span>
+                            </a>
+                            <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate d-flex align-items-center text-white">
+                                <i class="bi bi-send-fill me-2 "></i>
+                                <span class="text-white flex-grow-1">Feedbacks</span>
+                            </a>
+                        </div>>
+                    </div>
+                </div>
+            </div>
+            <main class="col p-0 ">
+                <div class="px-3 header-background text-white py-4" >
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none text-white"><i class="bi bi-list"></i> </a>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-search me-3"></i>
+                            <i class="bi bi-pencil-fill me-3"></i>
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i> Tài Khoản</i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus-fill m-1"></i>Đăng Kí</a></li>
+                                  <li><a class="dropdown-item" href="#"><i class="bi bi-person-check-fill m-1"></i>Đăng Nhập</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <header class="page-header pt-3 mt-4">
+                        <div class="head head-left">
+                            <div class="logo"><i class="fa-solid fa-earth-europe"></i>Edusocial</div>
+                            <div class="title">
+                                <h2>Bài Viết</h2>
+                                <p class="lead">Kho lưu trữ những kiến thức bổ ích từ mọi người</p>
+                            </div>
+                        </div>
+                        <div class="head head-right">
+                            <div class="icon">
+                                <i class="fa fa-search"></i>
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="addNew">
+                                <button class="addNewbtn">
+                                    <a class="text-white" style="text-decoration: none;" href="/user/post/create"><i style="padding-right:10px;" class="fa-solid fa-circle-plus"></i>Viết bài</a>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="row pt-4 m-auto justify-content-center">
+                        <%- body %>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>

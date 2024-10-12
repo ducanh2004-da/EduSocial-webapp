@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="/api.css">
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center; color:rgb(72, 221, 171);cursor:pointer;">
+      <a style="text-decoration: none;" href="/">EduSocial.com</a>
+    </h1>
+  </header>
+  <div class="container">
+    <h1>Login or Registers</h1>
+    <div id="message"></div>
+
+    <!-- Form đăng nhập -->
+    <form class="form" id="login-form">
+      <h2>LOGIN</h2>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Do not have account?<a id="switch-regis" href="#"> Register now</a></p>
+    </form>
+
+    <!-- Form đăng ký -->
+    <form class="form" id="register-form">
+      <h2>REGISTER</h2>
+      <input type="text" id="register-username" placeholder="Username" required>
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Password" required>
+      <button type="submit">Register</button>
+      <p>Have account?<a id="switch-log" href="#"> Login now</a></p>
+    </form><hr>
+    <div class="link-group">
+      <p style="text-align: center;">Đăng nhập/Đăng ký với</p>
+      <ul class="link">
+        <li class="link-list"><a href="/api/facebook"><img style="background-size: cover; background-repeat: no-repeat;" src="/facebook.jpg"></a></li>
+        <li class="link-list"><a href="/api/google"><img style="background-size: cover; background-repeat: no-repeat;" src="/google.jpg"></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="/api.js"></script>
+</body>
+</html>
